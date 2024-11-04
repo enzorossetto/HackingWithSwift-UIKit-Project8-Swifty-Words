@@ -13,6 +13,8 @@
 		B10967C62C41B3F700E8AC76 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10967C42C41B3F700E8AC76 /* Main.storyboard */; };
 		B10967C82C41B3FE00E8AC76 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B10967C72C41B3FE00E8AC76 /* Assets.xcassets */; };
 		B10967CB2C41B3FE00E8AC76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B10967C92C41B3FE00E8AC76 /* LaunchScreen.storyboard */; };
+		B1D5A28D2CD9125900BAE042 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B1D5A28C2CD9125900BAE042 /* level2.txt */; };
+		B1D5A28E2CD9125900BAE042 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B1D5A28B2CD9125900BAE042 /* level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		B10967C72C41B3FE00E8AC76 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B10967CA2C41B3FE00E8AC76 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B10967CC2C41B3FE00E8AC76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B1D5A28B2CD9125900BAE042 /* level1.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
+		B1D5A28C2CD9125900BAE042 /* level2.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = level2.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,8 @@
 				B10967C72C41B3FE00E8AC76 /* Assets.xcassets */,
 				B10967C92C41B3FE00E8AC76 /* LaunchScreen.storyboard */,
 				B10967CC2C41B3FE00E8AC76 /* Info.plist */,
+				B1D5A28B2CD9125900BAE042 /* level1.txt */,
+				B1D5A28C2CD9125900BAE042 /* level2.txt */,
 			);
 			path = Project8;
 			sourceTree = "<group>";
@@ -128,6 +134,8 @@
 				B10967CB2C41B3FE00E8AC76 /* LaunchScreen.storyboard in Resources */,
 				B10967C82C41B3FE00E8AC76 /* Assets.xcassets in Resources */,
 				B10967C62C41B3F700E8AC76 /* Main.storyboard in Resources */,
+				B1D5A28D2CD9125900BAE042 /* level2.txt in Resources */,
+				B1D5A28E2CD9125900BAE042 /* level1.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

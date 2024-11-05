@@ -23,6 +23,7 @@ class ViewController: UIViewController {
             scoreLabel.text = "Score: \(score)"
         }
     }
+    var correctAnswers = 0
     var level = 1
     
     override func loadView() {
@@ -73,6 +74,9 @@ class ViewController: UIViewController {
         view.addSubview(clear)
         
         let buttomView = UIView()
+        buttomView.layer.borderWidth = 1
+        buttomView.layer.cornerRadius = 10
+        buttomView.layer.borderColor = UIColor.lightGray.cgColor
         buttomView.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(buttomView)
         
@@ -152,16 +156,27 @@ class ViewController: UIViewController {
             
             currentAnswer.text = ""
             score += 1
+            correctAnswers += 1
             
             if score % 7 == 0 {
                 let ac = UIAlertController(title: "Well done!", message: "Are you ready for the next level?", preferredStyle: .alert)
                 ac.addAction(UIAlertAction(title: "Let's go!", style: .default, handler: levelUp))
                 present(ac, animated: true)
             }
+            
+            return
         }
+        
+        score -= 1
+        
+        let ac = UIAlertController(title: "Wrong answer!", message: "Think a little more about the clues", preferredStyle: .alert)
+        ac.addAction(UIAlertAction(title: "Ok", style: .default) { [weak self] _ in
+            self?.clearTapped(nil)
+        })
+        present(ac, animated: true)
     }
     
-    @objc func clearTapped(_ sender: UIButton) {
+    @objc func clearTapped(_ sender: UIButton?) {
         currentAnswer.text = ""
         
         for button in activatedButtons {
